@@ -1,42 +1,63 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
-body, html {
-      height: 100%;
-      padding: 0%;
-}
-    
-.parallax {
-    /* The image used */
-    background-image: url('example_background.jpg');
-    
-    /* Full height */
-    height: 100%; 
-    padding: 0%;
-   
-    /* Create the parallax scrolling effect */
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-</style>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        body,
+        html {
+            height: 100%;
+            padding: 0%;
+            font-family: Verdana;
+        }
+
+        /* Hide scrollbar for Chrome, Safari and Opera */
+        body::-webkit-scrollbar {
+            display: none;
+        }
+
+        /* Hide scrollbar for IE, Edge and Firefox */
+        body {
+            -ms-overflow-style: none;
+            /* IE and Edge */
+            scrollbar-width: none;
+            /* Firefox */
+        }
+
+        .parallax {
+            /* The image used */
+            background-image: url('example_background.jpg');
+
+            /* Full height */
+            height: 100%;
+            padding: 0%;
+            margin: 0%;
+
+            /* Create the parallax scrolling effect */
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+    </style>
 </head>
+
 <body>
 
-<p>Scroll Up and Down this page to see the parallax scrolling effect.</p>
+    <div class="parallax" style="height:100px;"></div>
+    <div class="parallax" style="height:500px;font-size:150px;color:white;text-align: center;">
+        Misinformation in the media
+    </div>
 
-<div class="parallax"></div>
+    <div class="parallax" style="height:200px;"></div>
+    <div class="parallax" style="height:500px;font-size:36px;color:white;">Example text that floats on background</div>
 
-<div style="height:500px;background-color:black;font-size:36px;color:white;">
-Scroll Up and Down this page to see the parallax scrolling effect.
-This div is just here to enable scrolling.
-Tip: Try to remove the background-attachment property to remove the scrolling effect.
-</div>
+    <div style="height:500px;background-color:black;font-size:36px;color:white;">
+        Example block of text that covers background
+    </div>
 
-<div class="parallax"></div>
+    <div class="parallax"></div>
 
 </body>
+
 </html>
